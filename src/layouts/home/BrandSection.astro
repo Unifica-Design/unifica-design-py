@@ -1,0 +1,32 @@
+---
+import Container from "../Container.astro";
+import {brandImg} from "../../utils/constanst";
+---
+<section class="w-full h-full pt-10 pb-20">
+    <Container>
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col w-full h-full items-center justify-center">
+                <div class="max-w-screen-xl px-1 py-1 md:px-4 md:py-8 mx-auto">
+                    <div class=" mx-auto text-center">
+                      <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-secondary sm:text-4xl ">
+                        Nuestros principales clientes
+                      </h2>
+                      <p class="mt-4 text-base font-normal text-secondary sm:text-xl">
+                        Somos una agencia de publicidad y marketing digital que utiliza la experiencia de nuestros profesionales para maximizar los resultados para nuestros clientes. Contamos con un equipo creativo y especializado para garantizar soluciones efectivas en el mercado.
+
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-7  gap-4">
+                {
+                    brandImg.map(({img,alt}) =>(
+                    <div class="flex items-center justify-center">
+                        <img class="transition-all duration-300 hover:scale-110" src={img} alt={alt} />
+                    </div>
+                    ))
+                }
+            </div>
+        </div>
+    </Container>
+</section>

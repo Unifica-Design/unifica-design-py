@@ -1,0 +1,130 @@
+---
+import Container from "../Container.astro"
+import Button from "../../components/Buttons/Button.astro"
+import CardInfo from "../../components/Cards/Card.info"
+import { IaIcon,SearchIcon,CalendarIcon } from "../../components/Icons"
+
+---
+<section class="pt-8 bg-gray-50" id="marketing">
+    <div class="bg-quote " id="comp-ikwu7qq3">
+        <Container>
+                <div>
+                    <div class="h-full pt-8">
+                        <div class="relative pt-6  bg-cover bg-[50%] h-[56rem] sm:h-[36rem] bg-no-repeat bottom-10 md:bottom-0 ">
+                            <div class="absolute z-10 bottom-0 left-0 right-0 top-0  w-full h-full items-end bg-fixed">
+                                <div class="container flex flex-col h-full justify-end items-center pt-5 sm:gap-0">
+                                    <div class="item flex-2 pb-5">
+                                        <div class="flex flex-col md:flex-row  justify-center items-center bg-primary pt-3 pb-3 pl-5 pr-5 gap-3 rounded-md text-center">
+                                            <p class="text-white font-bold  text-3xl">AUMENTE TU PRESENCIA DIGITAL</p>
+                                            <div>
+                                                <a href="https://odoo.unificadesign.com.py/r/Zuz">
+                                                    <Button type="secondary" title="Conoce cómo podemos ayudarte" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item flex-1 flex flex-col md:flex-row items-center justify-center gap-2">
+                                        <div class="item flex-1 flex  justify-end items-center md:bg-transparent h-full">
+                                            <div class="w-full sm:w-4/5 pr-3">
+                                                <div class="flex flex-col gap-3">
+                                                    <p class="text-2xl font-bold text-white text-end uppercase">Haz crecer tu negocio con tecnología y marketing</p>
+                                                    <div class="flex md:flex-col flex-row  lg:flex-row gap-2 justify-end ">
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm">E-MAIL MARKETING </p> 
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm">ADAPTADOs P/ CEL</p>
+                                                    </div>
+                                                    <div class="flex flex-row gap-2 justify-end ">
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm"> PLANEAMIENTO PUBLICITARIO </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item flex-2 flex items-end h-full">
+                                            <img class="img-background" src="public/img/stra_section/d35e9f_630c8384bb684583bd7e102488fac89e~mv2.webp"/></div>
+                                        <div class="item flex-1 flex items-center  md:bg-transparent h-full">
+                                            <div class="w-full sm:w-4/5 pl-3">
+                                                <div class="flex flex-col gap-3">
+                                                    <p class="text-2xl font-bold text-white text-start">AUMENTA TUS VENTAS Y DOMINA LA INTERNET</p>
+                                                    <div class="flex  md:flex-col flex-row  lg:flex-row  gap-2 justify-start ">
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm"> GOOGLE ADS </p> 
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm">SOCIAL ADS</p>
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm">YOUTUBE</p>
+                                                    </div>
+                                                    <div class="flex  md:flex-col flex-row  lg:flex-row  gap-2 justify-start ">
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm">LINKEDIN ADS</p>
+                                                        <p class="px-2 text-center text-sm bg-primary text-white font-bold rounded-sm">TABOOLA & OTROS</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </Container>
+        <div class="bg-[#15286c] backdrop-blur-lg  pt-16 pb-16">
+            <Container>
+                <div class="flex flex-row flex-wrap items-center justify-center gap-8">
+                    <CardInfo Icon={CalendarIcon} title={"Desarrollo tecnológico adaptado a tus metas"} />
+                    <CardInfo Icon={IaIcon} title={"Aumenta tus conversiones con campañas inteligentes y análisis de resultados"} />
+                    <CardInfo Icon={SearchIcon} title={"Potencia tu marca con una identidad visual única y memorable"} />
+                </div>
+            </Container>
+        </div>
+    </div>
+
+</section>
+
+
+<style>
+    #comp-ikwu7qq3::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 35px;
+        background: url("data:image/svg+xml,%3Csvg id='comp-krgyrgmk-top' preserveAspectRatio='none' data-bbox='0 91 1920 209' viewBox='0 91 1920 209' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-krgyrgmk-top %3E g %7B transform: scaleY(-1) translateY(-391px); %7D %23comp-krgyrgmk-top %7B fill: %23FAFAFA; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath fill-rule='evenodd' d='M1920 291C1656.8 169.2 1323.3 91 960 91S262.5 169.2 0 291v9h1920v-9z M0,90 h1920 v210 h-1920 Z'/%3E%3C/g%3E%3C/svg%3E");
+        opacity: 1;
+        transform: scale(1, -1);
+    }
+
+    #comp-ikwu7qq3::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 35px;
+        background: url("data:image/svg+xml,%3Csvg id='comp-krgyrgmk-top' preserveAspectRatio='none' data-bbox='0 91 1920 209' viewBox='0 91 1920 209' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-krgyrgmk-top %3E g %7B transform: scaleY(-1) translateY(-391px); %7D %23comp-krgyrgmk-top %7B fill: %23FAFAFA; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath fill-rule='evenodd' d='M1920 291C1656.8 169.2 1323.3 91 960 91S262.5 169.2 0 291v9h1920v-9z M0,90 h1920 v210 h-1920 Z'/%3E%3C/g%3E%3C/svg%3E");
+        opacity: 1;
+        transform: scale(1, 1);
+        background-color: rgb(21 40 108);
+    }
+
+    @media (max-width: 600px) {
+        #comp-ikwu7qq3::before {
+            background-image: url("data:image/svg+xml,%3Csvg id='comp-ikwu7qq3' preserveAspectRatio='none' data-bbox='0 100 1920 200' viewBox='0 100 1920 200' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-krgyrgmk-top %7B fill: %23FAFAFA; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath d='M1920 300 0 100v200h1920z' fill='%23FAFBFA'/%3E%3C/g%3E%3C/svg%3E");
+            transform: scale(-1, -1);
+            height: 6rem;
+        }
+
+        #comp-ikwu7qq3::after {
+            background-image: url("data:image/svg+xml,%3Csvg id='comp-ikwu7qq3' preserveAspectRatio='none' data-bbox='0 100 1920 200' viewBox='0 100 1920 200' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-krgyrgmk-top %7B fill: %23FAFAFA; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath d='M1920 300 0 100v200h1920z' fill='%23FAFBFA'/%3E%3C/g%3E%3C/svg%3E");
+            transform: scale(1, 1);
+            height: 6rem;
+        }
+    }
+
+    .bg-quote {
+        background: linear-gradient(147deg, #05125ef3 0%, #163079ef 48.15%, #05125ef5 100%),url("/img/paralax_bg.webp") center center no-repeat;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .img-background{
+        width: 226px;
+        height: 416px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+</style>

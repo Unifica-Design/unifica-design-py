@@ -1,0 +1,33 @@
+---
+import Card from "../../components/Cards/Card.info"
+import { IaIcon,PersonIcon,SearchIcon,DashIcon } from "../../components/Icons"
+import Container from "../Container.astro"
+
+---
+<div>
+    <div class="relative h-full">
+        <div class="relative z-10 h-full bg-cover bg-center bg-no-repeat" style="background-image: url('/img/porfolio/header.webp'); height: 550px;">
+            <div class="absolute inset-0 bg-blue-950 bg-opacity-80"></div>
+            <Container>
+                <div class="relative pt-36 ml-auto z-13 ">
+                    <div class="lg:w-2/3 text-center mx-auto  h-full" >
+                        <div class="flex items-center justify-center flex-col gap-1">
+                            <div class="pb-4">
+                                <h2 class="text-3xl font-extrabold text-white">NUESTROS SITIOS</h2>
+                            </div>
+                            <div class="pb-10">
+                                <p class="text-lg font-medium text-white text-solution">Creación de sitios web profesionales y de alta calidad para todo tipo de empresas y clientes: Blogs, Páginas Institucionales, Landing Pages, Tienda Online, Páginas Curriculares.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:grid grid-cols-4 gap-4">
+                        <Card Icon={IaIcon}  title="Inteligencia artificial integrada." />
+                        <Card Icon={SearchIcon}  title="Desarrollo SEO y Favicon incluido." />
+                        <Card Icon={PersonIcon}  title="Servicio Humanizado y Personalizado." />
+                        <Card Icon={DashIcon}  title="Sitios web optimizados y rápidos para teléfonos móviles." />
+                    </div>
+                </div>
+            </Container>
+        </div>
+    </div>
+</div>

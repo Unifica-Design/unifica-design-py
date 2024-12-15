@@ -1,0 +1,58 @@
+---
+import Container from "../Container.astro"
+
+---
+<div>
+    <div class="relative h-full">
+        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video 
+            class="min-w-full min-h-full absolute object-cover "
+            src="https://video.wixstatic.com/video/11062b_0fcc5b5d1613468aad7802063185e9d1/1080p/mp4/file.mp4"
+            autoplay 
+            muted 
+            loop
+            >
+            </video>
+        </div>
+        <div class="relative z-10 h-full  ">
+            <Container>
+                <div class="relative pt-36 ml-auto z-13 ">
+                    <div class="lg:w-2/3 text-center mx-auto  h-full" >
+                        <div class="flex items-center justify-center flex-col gap-1">
+                            <div class="pb-4">
+                                <img src="/img/Raposa_1.webp" class="w-[150px]" />
+                            </div>
+                            <div class="pb-10">
+                                <p class="text-lg font-medium text-white text-solution">Nuestra agencia de marketing digital maximiza los resultados para los clientes a través de la experiencia de nuestros profesionales. Desarrollamos estrategias eficientes, siguiendo las tendencias del mercado. Combinamos experiencia técnica y creatividad para lograr resultados significativos e impulsar el éxito del cliente. Estamos listos para ayudarte a alcanzar tus objetivos de marketing digital y aumentar tus resultados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    </div>
+</div>
+
+<style>
+
+.video-docker {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-docker::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle farthest-corner at 42% 40%, #5d5c5a9e 0%, #5f5e5d83 36.0321044921875%, #5f5e5d90 75.677490234375%);
+    z-index: 1;
+    opacity: 0.7;
+
+}
+
+
+</style>
