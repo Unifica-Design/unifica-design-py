@@ -1,0 +1,65 @@
+---
+import Container from "../Container.astro"
+---
+
+<footer
+  class="bg-quote pt-10  flex flex-col items-center bg-secondary text-center text-surface  lg:text-left">
+    <Container>
+        <div>
+            <div class="container p-6 pt-10">
+                <div class="grid gap-2 lg:grid-cols-3 pb-10">
+                    <div class="mb-6 md:mb-0 w-full sm:w-4/5">
+                        <h5 class="mb-5 uppercase text-white font-bold">Tráfico Digital y SEO</h5>
+                        <p class="mb-4 text-white">
+                            Atraemos clientes potenciales con campañas de tráfico pago y estrategias SEO avanzadas.
+                        </p>
+                    </div>
+
+                    <div class="mb-6 md:mb-0  w-full sm:w-4/5">
+                        <h5 class="mb-5 uppercase text-white font-bold">Diseño y desarrollo tecnológico</h5>
+                        <p class="mb-4 text-white">
+                            Aplicaciones, e-commerce, y soluciones adaptadas para transformar tus procesos digitales
+                        </p>
+                    </div>
+                    <div class="mb-6 md:mb-0  w-full sm:w-4/5">
+                        <h5 class="mb-5 uppercase text-white font-bold">Formas de pago</h5>
+                        <p class="mb-4 text-white">
+                            Aceptamos pagos seguros con PIX, transferencias y tarjetas
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 pb-10 pt-10">
+                    <div class="grid grid-rows-1 md:grid-rows-3 justify-center  sm:grid-flow-col gap-4">
+                        <div class="col-span-2">
+                            <h5 class="mb-2 text-center sm:text-end uppercase text-white font-bold">SOLUCIONES CREATIVAS PARA SU NEGOCIO</h5>
+                        </div>
+                        <div class="row-span-2 col-span-2 ">
+                            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center sm:items-end sm:justify-end">
+                               <p class="text-white">Protegiendo tu confianza</p>
+                           </div>
+                      
+                        </div>
+                        <div class="row-span-3 col-span-2 justify-center w-full sm:w-20">  
+                            <div class="w-full flex items-center justify-center">
+                                <img src="/img/unifica/footerIcon.png" alt="icono footer"/>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="w-full p-4 text-center">
+                <p class="text-gray-400">División Digital.- Unifica Design - Todos los derechos reservados ©</p>
+            </div>
+        </div>
+    </Container>
+</footer>
+
+<style>
+.bg-quote {
+        background: linear-gradient(147deg, #05125ef3 0%, #163079ef 48.15%, #05125ef5 100%),url("/img/footer_bg.jpg") center center no-repeat;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+</style>

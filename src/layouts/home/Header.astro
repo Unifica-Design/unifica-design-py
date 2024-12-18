@@ -1,0 +1,130 @@
+---
+import Container from "../Container.astro"
+
+---
+<div>
+    <div class="relative h-full" id="comp-ikwu7qq2">
+        <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+            <video 
+            class="min-w-full min-h-full absolute object-cover "
+            src="/video/header_video.webm"
+            autoplay 
+            muted 
+            loop
+            >
+            </video>
+        </div>
+        <div class="relative z-10 h-full  ">
+            <Container>
+                <div class="relative pt-36 ml-auto z-13 ">
+                    <div class="lg:w-2/3 text-center mx-auto  h-full" >
+                        <div class="flex items-center justify-center flex-col gap-1">
+                            <img src="/img/unifica/principal_white.webp" class="md:w-[55%] md:h-[55%]" alt="logo-bg"/>
+                            <div>
+                                <h5 class="text-2xl md:text-5xl font-light text-white text-solution ">¡Soluciones tecnologicas para tu negocio!</h5>
+                            </div>
+                                <a href="#studi-web" aria-label="logo" class="flex space-x-2 items-center w-7 h-2/3 md:h-[8rem] scrolldown">
+                                    {/*Logo*/}
+                                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="49.4 21.5 101.075 157.1" viewBox="49.4 21.5 101.075 157.1" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="tint" role="presentation" aria-hidden="true">
+                                        <g>
+                                            <path d="M149.8 69.6c-.9-26-23.7-48.1-49.9-48.1s-49 22-49.9 48.1c-.8 24.5-.8 36.5 0 60.9.9 26 23.7 48.1 49.9 48.1s49-22 49.9-48.1c.9-24.6.9-36.5 0-60.9zm-4.1 60.7c-.8 23.9-21.7 43.9-45.7 43.9s-44.9-20.1-45.7-43.9c-.8-23.8-.8-36.2 0-60.6S76 25.8 100 25.8s44.9 20.1 45.7 43.9.8 36.2 0 60.6zm-43.6-70v30.5c.2 1.2-.6 2.3-1.7 2.5s-2.3-.6-2.5-1.7c-.1-.2-.1-.6 0-.8V60.3c-.2-1.2.6-2.3 1.7-2.5s2.3.6 2.5 1.7c.1.2.1.5 0 .8z" fill="#FFFFFF"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    </div>
+</div>
+
+<style>
+#comp-ikwu7qq2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 37px;
+  background: url("data:image/svg+xml,%3Csvg id='comp-ikwu7qq2-bottom' preserveAspectRatio='none' data-bbox='0 91 1920 209' viewBox='0 91 1920 209' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-ikwu7qq2-bottom %3E g %7B transform: scaleY(-1) translateY(-391px); %7D %23comp-ikwu7qq2-bottom %7B fill: %23FFFFFF; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath fill-rule='evenodd' d='M1920 291C1656.8 169.2 1323.3 91 960 91S262.5 169.2 0 291v9h1920v-9z M0,90 h1920 v210 h-1920 Z'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 1;
+  transform: scale(1, 1);
+  
+}
+
+@media (max-width: 600px) {
+    #comp-ikwu7qq2::after {
+        background:url("data:image/svg+xml,%3Csvg id='comp-ikwu7qq2-bottom' preserveAspectRatio='none' data-bbox='0 100 1920 200' viewBox='0 100 1920 200' height='100%25' width='100%25' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cdefs%3E%3Cstyle%3E%23comp-ikwu7qq2-bottom %7B fill: %23FFFFFF; %7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath d='M1920 300 0 100v200h1920z'/%3E%3C/g%3E%3C/svg%3E");
+        transform: scale(-1, 1);
+        height: 38px;
+    }
+    
+}
+
+
+.video-docker {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-docker::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle farthest-corner at 42% 40%, #EFDC7D 0%, #E7C30B 36.0321044921875%, #A1572B 75.677490234375%);
+    z-index: 1;
+    opacity: 0.7;
+
+}
+
+.text-solution{
+    font-family: caveat, cursive;
+}
+
+/* copy from here */
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: relative;
+
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #ffffff66;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+  80% {
+    transform: translate(0, -20px);
+    height: 10px;
+    opacity: 0;
+  }
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+</style>

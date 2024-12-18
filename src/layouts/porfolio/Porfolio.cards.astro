@@ -1,0 +1,15 @@
+---
+import Container from "../Container.astro";
+import { itemPorfolios } from "../../utils/constanst";
+import CardPorfolio from "../../components/Cards/Card.porfolio";
+---
+
+<div>
+    <Container>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-20 pb-20">
+            {itemPorfolios.map((item)=> !item.isHiddenInPorfolioPage &&(
+                <CardPorfolio title={item.description} url={item.url} img={item.src} isPro={item.isPro} />
+            ))}
+        </div>
+    </Container>
+</div>
