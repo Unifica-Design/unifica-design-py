@@ -4,7 +4,7 @@ const CardInfo = ({ Icon, title }) => (
       <div>
         <Icon />
       </div>
-      <h5 className="mb-1 font-medium text-gray-900 dark:text-white text-center text-base p-8">
+      <h5 className="mb-1 font-medium text-white text-center text-base p-8">
         {title}
       </h5>
     </div>
